@@ -43,7 +43,7 @@ async function sendNotification(token, title, body) {
 // Function to get an access token using Google OAuth2
 async function getAccessToken() {
   const auth = new google.auth.GoogleAuth({
-    keyFile: path.join(__dirname, "../../serviceAccountKey2.json"), // path to the service account key
+    keyFile: path.join(__dirname, "../../serviceAccountKey.json"), // path to the service account key
     scopes: ["https://www.googleapis.com/auth/firebase.messaging"],
   });
 
